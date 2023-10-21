@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbtn{
+    display: flex;
+}
+
+.main-wrapper .container .homebt{
+    padding-right: 2%;
+}
+
+.main-wrapper .homebt a button{
+    border: none;
+    /* background: #2fba25; */
+    /* background: transparent; */
+    color: white;
+    /* padding: 12px 30px; */
+    padding: 0.5%;
+    border-radius: 5px;
+    /* color: #2fba25; */
+    font-weight: bold;
+    font-size: 15px;
+    /* border: #2fba25 4px solid;
+    text-shadow: 0px 0px 13px #2fba25;
+    box-shadow: inset 0 0 1.66px 0 #2fba25,
+                inset 0 0 6.66px 0 #2fba25,
+                0 0 20px 0 #2fba25,
+                0 0 50px 0 #2fba25; */
+                background: rgba( 255, 255, 255, 0.15 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 5.5px );
+                -webkit-backdrop-filter: blur( 5.5px );
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.3s;
+}
+
+.main-wrapper .homebt a button:hover{
+        /* transform: scale(1.3); */
+        cursor: pointer;
+        color: white;
+        transform: scale(1.2);
+        background-color: #F0A500;
+        box-shadow: 0 0 5px #F0A500,
+                    0 0 20px #F0A500,
+                    0 0 60px #F0A500,
+                    0 0 150px #F0A500;
+}
+
+.main-wrapper .homebt a button i{
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* html, body{
+    font-family: 'Roboto', sans-serif;
+} */
+
+img{
+    width: 100%;
+    display: block;
+}
+.main-wrapper{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(wp2.jpg);;
+    /* background-color: #f1f1f1; */
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(triangify.png); */
+    /* background-image: linear-gradient(45deg, rgb(20, 222, 124) 0%, rgb(20, 222, 124) 21%,rgb(25, 190, 119) 21%, rgb(25, 190, 119) 37%,rgb(30, 158, 113) 37%, rgb(30, 158, 113) 46%,rgb(35, 126, 108) 46%, rgb(35, 126, 108) 53%,rgb(39, 94, 103) 53%, rgb(39, 94, 103) 59%,rgb(44, 62, 97) 59%, rgb(44, 62, 97) 77%,rgb(49, 30, 92) 77%, rgb(49, 30, 92) 100%); */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.product-div{
+    color: white;
+    margin: 1rem 0;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: #fff;
+    border-radius: 3px; */
+    column-gap: 10px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.product-div-left{
+    padding: 20px;
+}
+.product-div-right{
+    padding: 20px;
+}
+.img-container img{
+    width: 200px;
+    margin: 0 auto;
+}
+.hover-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+.hover-container div{
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 0 4px 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    border-color: rgb(204, 204, 204)!important;
+}
+.hover-container div:hover{
+    border-color: rgb(204, 204, 204);
+}
+.hover-container div img{
+    width: 50px;
+    cursor: pointer;
+}
+.product-div-right span{
+    display: block;
+}
+.product-name{
+    font-size: 26px;
+    margin-bottom: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+.product-price{
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-rating span{
+    margin-right: 6px;
+}
+.product-description{
+    font-weight: 18px;
+    line-height: 1.6;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-top: 22px;
+}
+.btn-groups{
+    margin-top: 22px;
+}
+.btn-groups button{
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-groups button .fas{
+    margin-right: 8px;
+}
+.add-cart-btn{
+    /* background-color: #FF9F00;
+    border: 2px solid #FF9F00; */
+    background: rgba( 255, 255, 255, 0.15 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px ); */
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-right: 8px;
+}
+.add-cart-btn:hover{
+    color: white;
+    transform: scale(1.1);
+    background-color: #F0A500;
+    box-shadow: 0 0 5px #F0A500,
+                0 0 20px #F0A500,
+                0 0 60px #F0A500,
+                0 0 150px #F0A500;
+}
+.buy-now-btn{
+    /* background-color: #000;
+    border: 2px solid #000; */
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.buy-now-btn:hover{
+    color: white;
+    transform: scale(1.1);
+    background-color: #F0A500;
+    box-shadow: 0 0 5px #F0A500,
+                0 0 20px #F0A500,
+                0 0 60px #F0A500,
+                0 0 150px #F0A500;
+}
+
+@media screen and (max-width: 992px){
+    .product-div{
+        grid-template-columns: 100%;
+    }
+    .product-div-right{
+        text-align: center;
+    }
+    .product-rating{
+        justify-content: center;
+    }
+    .product-description{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btn-groups button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

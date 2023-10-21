@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketEase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel = "stylesheet" href = "stylelanding.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="ticketlogo.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class = "main-wrapper">
+        <div class = "container">
+            <div class="navbtn">
+            <!-- <div class="homebt">
+                <a href="products.html">
+                    <button>
+                        <i class="fas fa-arrow-left" ></i>
+                    </button>
+                </a>
+            </div> -->
+            <!-- <div class="homebt">
+                <a href="index.html#product">
+                    <button>
+                        <i class="fas fa-home" ></i>
+                    </button>
+                </a>
+            </div> -->
+            </div>
+            <div class = "product-div">
+                <div class = "product-div-left">
+                    <div class = "img-container">
+                        <img src = "success.png" alt = "Glutaraldehyde 50% Ucarcide 50 Antimicrobial Dow Dupont">
+                    </div>
+                </div>
+                <div class = "product-div-right">
+                    <span class = "product-name">Payment Status</span>
+                    <!-- <span class = "product-price">Rp100</span> -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- <p class = "product-description">Pembelian minimum: 25 Kilogram</p> -->
+                    <p class="product-description">Payment successful!</p>
+                    <div class = "btn-groups">
+                        <a href="index.html"><button type = "button" class = "add-cart-btn">Return to homepage</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const allHoverImages = document.querySelectorAll('.hover-container div img');
+const imgContainer = document.querySelector('.img-container');
+
+window.addEventListener('DOMContentLoaded', () => {
+    allHoverImages[0].parentElement.classList.add('active');
+});
+
+allHoverImages.forEach((image) => {
+    image.addEventListener('mouseover', () =>{
+        imgContainer.querySelector('img').src = image.src;
+        resetActiveImg();
+        image.parentElement.classList.add('active');
+    });
+});
+
+function resetActiveImg(){
+    allHoverImages.forEach((img) => {
+        img.parentElement.classList.remove('active');
+    });
+}
+    </script>
+</body>
+</html>

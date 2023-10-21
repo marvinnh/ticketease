@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(wp2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* .homepagecontainer{
+    background-color: white;
+    margin-top: 12%;
+    margin-right: 65%;
+    margin-left: 10%;
+    border-radius: 15px;
+    padding-bottom: 45px;
+} */
+
+.homepageheader{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 12%;
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+}
+
+.homepagecontent{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 2%;
+    font-size: 15px;
+    font-weight: lighter;
+    color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.logo{
+    color:white;
+    font-size: 28px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color:#F0A500;
+    text-shadow: 0px 0px 13px #F0A500;
+    /* transition: 0.3s; */
+}
+
+button{
+    border: none;
+    background: #F0A500;
+    padding: 12px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    /* transform: scale(1.3); */
+    cursor: pointer;
+    box-shadow: 0 0 5px #F0A500,
+                0 0 20px #F0A500,
+                0 0 60px #F0A500,
+                0 0 150px #F0A500;
+}
+
+.active{
+    color:#F0A500;
+    text-shadow: 0px 0px 13px #F0A500;
+}
+
+.explorebutton{
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+.recc{
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.recc:hover{
+    color: #F0A500;
+    text-shadow: 0px 0px 13px #F0A500;
+}
+
+/* service page */
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+    /* background: #fafafa; */
+}
+
+.wrapper h1{
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #24262b;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.2);
+    /* transition: 0.3s; */
+}
+
+.card i{
+    margin: 20px;
+    color: #F0A500;
+    font-size: 45px;
+}
+
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400px;
+    text-align: center;
+    color: white;
+}
+
+.card p{
+    color: #6c757d;
+    text-align: center;
+}
+
+.card:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+
+.card:hover h2{
+    font-weight: 600;
+    color: #f2f2f2;
+}
+
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg, rgba(240,165,0,0.7) 0%, rgba(240,165,0,0.7) 100%), url(wp2.jpg);
+    background-size: cover;
+}
+
+.card:nth-child(2):hover{
+    background: linear-gradient(45deg, rgba(240,165,0,0.7) 0%, rgba(240,165,0,0.7) 100%), url(wp2.jpg);
+    background-size: cover;
+}
+
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg, rgba(240,165,0,0.7) 0%, rgba(240,165,0,0.7) 100%), url(wp2.jpg);
+    background-size: cover;
+}
+
+.card:nth-child(4):hover{
+    background: linear-gradient(45deg, rgba(240,165,0,0.7) 0%, rgba(240,165,0,0.7) 100%), url(wp2.jpg);
+    background-size: cover;
+}
+
+.card:nth-child(5):hover{
+    background: linear-gradient(45deg, rgba(240,165,0,0.7) 0%, rgba(240,165,0,0.7) 100%), url(wp2.jpg);
+    background-size: cover;
+}
+
+.card:nth-child(6):hover{
+    background: linear-gradient(45deg, rgba(240,165,0,0.7) 0%, rgba(240,165,0,0.7) 100%), url(wp2.jpg);
+    background-size: cover;
+}
+
+/* footer */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #F0A500;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.3s ease;
+}
+/* .footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+} */
+.footer-col .social-links .facebooklogo:hover{
+    color: white;
+    background-color: #4267B2;
+    box-shadow: 0 0 5px #4267B2,
+                0 0 20px #4267B2,
+                0 0 60px #4267B2,
+                0 0 150px #4267B2;
+                transform: scale(1.2);
+}
+
+.footer-col .social-links .twitterlogo:hover{
+    color: white;
+    background-color: #1DA1F2;
+    box-shadow: 0 0 5px #1DA1F2,
+                0 0 20px #1DA1F2,
+                0 0 60px #1DA1F2,
+                0 0 150px #1DA1F2;
+                transform: scale(1.2);
+}
+
+.footer-col .social-links .instagramlogo:hover{
+    color: white;
+    background-color: #e4405f;
+    box-shadow: 0 0 5px #e4405f,
+                0 0 20px #e4405f,
+                0 0 60px #e4405f,
+                0 0 150px #e4405f;
+                transform: scale(1.2);
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+}
+
+.footer-col .social-links .linkedinlogo:hover{
+    color: white;
+    background-color: #0072b1;
+    box-shadow: 0 0 5px #0072b1,
+                0 0 20px #0072b1,
+                0 0 60px #0072b1,
+                0 0 150px #0072b1;
+                transform: scale(1.2);
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #F0A500;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #F0A500;
+}
+
+/* media queries */
+@media only screen and (min-width: 992px){
+    .hero{
+        height: 110vh;
+    }
+}
